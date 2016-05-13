@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  	<meta charset="utf-8">
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	  	
+	  	<title>UAS Articles</title>
+	  	
+	  	<meta name="description" content="">
+		<meta name="author" content="Tuscarora TSA">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	    <!--Favicons-->
+	  	<link rel="shortcut icon" href="favicon.ico">
+	  	<link rel="apple-touch-icon" href="./../res/img/apple-touch-icon.png">
+	  	<!--Essentials-->
+	  	<script src="../bower_components/webcomponentsjs/webcomponents.js"></script>
+	  	<link rel="import" href="../bower_components/polymer/polymer.html">
+	  	<!--Imports-->
+	  	<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+	  	<link rel="import" href="../bower_components/paper-menu/paper-menu.html">
+	  	<link rel="import" href="../bower_components/paper-menu-button/paper-menu-button.html">
+	  	<link rel="import" href="../bower_components/paper-toast/paper-toast.html">
+	  	<link rel="import" href="../bower_components/paper-button/paper-button.html">
+	  	<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+	  	<link rel="import" href="../bower_components/paper-dropdown/paper-dropdown.html">
+	  	<link rel="import" href="../bower_components/paper-material/paper-material.html">
+	  	<link rel="import" href="../bower_components/iron-collapse/iron-collapse.html">
+	  	<link rel="import" href="../bower_components/paper-card/paper-card.html">
+	  	<link rel="import" href="../bower_components/paper-drawer-panel/paper-drawer-panel.html">
+	  	<link rel="import" href="../bower_components/paper-fab/paper-fab.html">
+	  	<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+	  	<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+	  	<link rel="import" href="../bower_components/iron-icons/hardware-icons.html">
+	  	<link rel="import" href="../bower_components/iron-icons/social-icons.html">
+	  	<link rel="import" href="../bower_components/iron-image/iron-image.html">
+	  	<link rel="import" href="../bower_components/paper-spinner/paper-spinner.html">
+	  	<link rel="import" href="../bower_components/paper-tooltip/paper-tooltip.html">
+	  	<link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout.html">
+	  	<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+	  	<link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
+	  	<link rel="import" href="../bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+	  	<link rel="import" href="../bower_components/iron-collapse/iron-collapse.html">
+	  	<!--Stylesheets-->
+	  	<link rel="stylesheet" href="styles.css">
+	  	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+	  	<!--Scripts-->
+	  	<script src="./../analytics.js"></script>
+	  	<script src="./../search.js"></script>
+	  	<script type="text/javascript">
+            document.addEventListener('polymer-ready', function() {
+                var navicon = document.getElementById('navicon');
+                var drawerPanel = document.getElementById('drawerPanel');
+                navicon.addEventListener('click', function() {
+                    drawerPanel.togglePanel();
+                });
+            });
+        </script>
+    </head>
+	<body unresolved class="bgcolor-darkgrey">
+        <paper-drawer-panel forceNarrow="true">
+            <paper-header-panel class="bgcolor-darkgrey" drawer>
+                <paper-toolbar class="blue"></paper-toolbar>
+				<paper-material class="bgcolor-blue" elevation="2">
+					<span class="bgcolor-darkgrey">
+						<div class="vertical end-justified layout">
+							<a class="wide" href="../index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="home"></iron-icon>Overview</paper-button></a>
+							<a class="wide" href="../articles/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="receipt"></iron-icon>Articles</paper-button></a>
+							<a class="wide" href="../gallery/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="view-quilt"></iron-icon>Gallery</paper-button></a>
+							<a class="wide" href="../contact/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="account-circle"></iron-icon>Contact</paper-button></a>
+						</div>
+					</span>
+				</paper-material>
+            </paper-header-panel>
+            <paper-header-panel main>
+                <paper-toolbar class="blue">
+                    <paper-icon-button id="navicon" icon="menu" paper-drawer-toggle></paper-icon-button>
+                    <span class="title">UAS Articles</span>
+                    <a href="javascript:window.print()"><paper-icon-button icon="print"></paper-icon-button></a>
+                    <a href="javascript:requestFullScreen(document.body)"><paper-icon-button icon="aspect-ratio"></paper-icon-button></a>
+                    <section onclick="clickHandler(event)">
+                        <paper-fab id="right" icon="thumb-up" ink="" data-dialog="modal"></paper-fab>
+                    </section>
+                </paper-toolbar>
+                <div id="cards" flex>
+                	<paper-card class="bgcolor-lightgrey" class="stretch">
+                        		<gcse:search></gcse:search>
+                        	</paper-card>
+                        <paper-card heading="Advances" class="bgcolor-lightgrey" class="stretch">
+        				  <div class="card-content">
+	    					<pre>
+	Today, drones are becoming widespread in most communities. People are buying them and are using them to film cool stuff by flying a Go Pro in the air with the drone and capture some stunning footages.
+	There has also been a new Exchange Traded Fund (ETF) in the stock market: IFLY. The PureFunds Drone Economy Strategy ETF consists of 47 companies that are developing, researching, or utilizing drones to track the Drone Index. In 2016, the price have gone up to around 25 dollars a share. The Drone Industry seems attractive and the stock price will go up when there are more players in the industry.
+	Toward the end of 2013, Amazon CEO, Jeff Bezos, had an interview with 60 Minutes to state that he wants to deliver products via drones. Since then, Amazon’s value of the company has been going up. People were excited to see that the future was coming quickly. The goal of the new Amazon Prime Air is to deliver products in 30 minutes or less by using unmanned aerial systems. This new feature Amazon has will have a huge impact on the drone industry in the upcoming years.
+	Another amazing technology is the autopilot system in Tesla cars. Tesla came out with a new model where a driver can simply sit back and relax. The car will drive itself to the final destination. Its features include changing lanes, parking, and turns all with the eyes of cameras. This electric car has other capabilities but the new self-driving cars fascinated a lot of people. In the future, some of the car-maker’s goal is to reduce crashing by developing new technologies to put in cars.</pre>
+        				  </div>
+        				</paper-card>
+        				<paper-card heading="Privacy" class="bgcolor-lightgrey" class="stretch">
+        				  <div class="card-content">
+	        				<pre>  	There have been numerous stories about drones being shot down in communities. People who shoot down drones have been arrested. This is because it is illegal for a person to not olny fire a gun near residences but also because a passing airplane may be hit. The government takes this very seriously because there has been an incident where a drone crashed in the White House Lawn and another crashed during a U.S. Open. 
+	If most people in the community fly drones for fun, there would be traffic up in the air, a lot! Drones could crash into each other and conflict could occur between the owners of the drones. Also, the laws of trespassing a property is not clear. If the drone is right above the property, there has been disputes that doing this is trespassing the property. What makes this more interesting is that most drones are equipped with cameras including Go Pros. Other people could be filming what another person is doing inside his house. This is a serious privacy concern and it needs to be debated.
+	The Federal Aviation Administration stated that by 2030, there will be more than 30,000 private unmanned vehicles in the air. NASA and Amazon talked about having a class G, which is the area fellow 500 feet. This will make limits of drones more clear and won’t interrupt other airplane flights. More and more people are taking drones to the sky, which leads to more people wanting stricter regulations for drones.</pre>
+        				  </div>
+        				</paper-card>
+        				<paper-card heading="Recreation" class="bgcolor-lightgrey" class="stretch">
+        				  <div class="card-content">
+	        				  <pre>
+	If you wish to buy your own drone and fly it in your community, there are some general guidelines you have to adhere to before you can do it. If your drone weighs over 0.55 pounds, you will need to register it with the Federal Aviation Administration (FAA). After that, you can go ahead and fly your drone. There are some general rules you need to keep in mind.
+	Always fly below 400 feet and make sure you can see your drone at all time. Stay away from low- flying aircrafts, like helicopters, and keep away from tracks and stadiums. Make sure you drone stay away from other hazardous objects in the sky or close to the ground.
+	Drones can be used for recreational uses and business uses. For recreational uses, you can use your drone as a hobby. Purposes include putting a camera on the drone and filming stuff. If you are videoing to advertise, then that is for commercial use and is not considered for recreational use. For business uses, you must have expressed permission from the FAA before you can fly your drone. All of these information can be found at knowbeforeyoufly.org. You must know your limits and rules in order to fly your drone.</pre>
+        				  </div>
+        				</paper-card>
+        				<paper-card heading="Security" class="bgcolor-lightgrey" class="stretch">
+        				  <div class="card-content">
+	        				  <pre>	Security is a big part in American’s lives. Most people value their home security really high and spend thousands of dollars utilizing various equipment and technologies in their home to make it a safer place to live in. Now, there might be an upgrade in the near future. Here are two good examples.
+	InGenious Security Products is developing a product in which a drone will activate when an entry to the house is made. The drone will just be on the roof, waiting for activation. When the alert signal is activated, it will turn on its HD camera and record the incident. This could be happening within 3 years and the expected cost will be around $1,500! 
+	Another example is drones chasing thieves to track what they are doing. Secom is the first in the world to produce this type of drone to both capture images and sense the object. This could be a huge step forward in security because this will make the security of houses more secure. Also, this could be applied to traffic lights as well. If there is a crime, there is easy identification and the thief can be followed by the drone.
+</pre>
+        				  </div>
+        				</paper-card>
+				</div>
+            </paper-header-panel>
+        </paper-drawer-panel>
+        <paper-dialog id="modal" modal>
+            <div align="center">
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                    <a class="a2a_button_facebook"></a>
+                    <a class="a2a_button_twitter"></a>
+                    <a class="a2a_button_google_plus"></a>
+                    <a class="a2a_button_pinterest"></a>
+                    <a class="a2a_button_tumblr"></a>
+                    <a class="a2a_button_reddit"></a>
+                    <a class="a2a_button_email"></a>
+                    <a class="a2a_button_stumbleupon"></a>
+                </div>
+                <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+            </div>
+            <div class="buttons">
+                <paper-icon-button icon="close" raised dialog-confirm autofocus></paper-icon-button>
+            </div>
+        </paper-dialog>
+	</body>
+    <script>
+        function clickHandler(e) {
+            var button = e.target;
+            while (!button.hasAttribute('data-dialog') && button !== document.body) {
+                button = button.parentElement;
+            }
+            if (!button.hasAttribute('data-dialog')) {
+                return;
+            }
+            var id = button.getAttribute('data-dialog');
+            var dialog = document.getElementById(id);
+            if (dialog) {
+                dialog.open();
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function requestFullScreen(element) {
+            // Supports most browsers and their versions.
+            var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
+    
+            if (requestMethod) { // Native full screen.
+                requestMethod.call(element);
+            } 
+            else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+                var wscript = new ActiveXObject("WScript.Shell");
+                if (wscript !== null) {
+                    wscript.SendKeys("{F11}");
+                }
+            }
+        }
+    </script>
+</html>
