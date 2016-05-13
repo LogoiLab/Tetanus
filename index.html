@@ -84,7 +84,7 @@
 														<div flex>
 															<a href="index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="folder"></iron-icon>ZIP</paper-button></a>
 															<a href="index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="account-balance-wallet"></iron-icon>TAR</paper-button></a>
-															<a href=""><paper-button class="wide bgcolor-lightgrey" data-dialog="modal-clone" raised><iron-icon icon="http"></iron-icon>CLONE</paper-button></a>
+															<a><paper-button class="wide bgcolor-lightgrey" data-dialog="modal-clone" raised><iron-icon icon="http"></iron-icon>CLONE</paper-button></a>
 														</div>
 													</paper-card>
                         	<paper-card class="bgcolor-lightgrey" heading="Updates" class="stretch">
@@ -115,19 +115,8 @@
             </div>
         </paper-dialog>
 				<paper-dialog id="modal-clone" modal>
-            <div align="center">
-                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-                    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-                    <a class="a2a_button_facebook"></a>
-                    <a class="a2a_button_twitter"></a>
-                    <a class="a2a_button_google_plus"></a>
-                    <a class="a2a_button_pinterest"></a>
-                    <a class="a2a_button_tumblr"></a>
-                    <a class="a2a_button_reddit"></a>
-                    <a class="a2a_button_email"></a>
-                    <a class="a2a_button_stumbleupon"></a>
-                </div>
-                <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+            <div align="center" flex>
+                <paper-input></paper-input>
             </div>
             <div class="buttons">
                 <paper-icon-button icon="close" raised dialog-confirm autofocus></paper-icon-button>
