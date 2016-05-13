@@ -9,8 +9,8 @@ padding: 5px !important;
 flex: 0 0 auto !important;
 align: center;
 }
-.bgcolor-blue{
-background-color: #4169E1;
+.bgcolor-red{
+background-color: #B7410E;
 }
 .bgcolor-darkgrey{
 background-color: #4A444B;
@@ -18,20 +18,14 @@ background-color: #4A444B;
 .bgcolor-lightgrey{
 background-color: #E7ECE6;
 }
-.bgcolor-red{
-background-color #FB2E01;
-}
-.color-blue{
-color: #4169E1;
+.color-red{
+color: #B7410E;
 }
 .color-darkgrey{
 color: #4A444B;
 }
 .color-lightgrey{
 color: #E7ECE6;
-}
-.color-red{
-color #FB2E01;
 }
 .space{
 margin: 1em;
@@ -74,7 +68,8 @@ html /deep/ paper-fab[icon="thumb-up"] {
 background: var(--paper-grey500);
 }
 paper-fab {
-background-color: #4A444B !important;
+background-color: #E7ECE6 !important;
+color: #B7410E !important;
 position: absolute;
 float: left;
 top: 2.5em;
@@ -86,8 +81,8 @@ word-wrap: break-word;
 max-width: 100%;
 margin: 1em;
 }
-paper-toolbar.blue {
-background-color: #4169E1;
+paper-toolbar.red {
+background-color: #B7410E;
 }
 paper-toolbar + paper-toolbar {
 margin-top: 20px;
