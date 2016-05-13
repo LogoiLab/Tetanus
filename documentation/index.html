@@ -3,11 +3,11 @@
 	<head>
 	  	<meta charset="utf-8">
 	  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	  	
+
 	  	<title>UAS Articles</title>
-	  	
+
 	  	<meta name="description" content="">
-		<meta name="author" content="Tuscarora TSA">
+		<meta name="author" content="LogoiLab">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	    <!--Favicons-->
 	  	<link rel="shortcut icon" href="favicon.ico">
@@ -45,7 +45,6 @@
 	  	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
 	  	<!--Scripts-->
 	  	<script src="./../analytics.js"></script>
-	  	<script src="./../search.js"></script>
 	  	<script type="text/javascript">
             document.addEventListener('polymer-ready', function() {
                 var navicon = document.getElementById('navicon');
@@ -59,22 +58,21 @@
 	<body unresolved class="bgcolor-darkgrey">
         <paper-drawer-panel forceNarrow="true">
             <paper-header-panel class="bgcolor-darkgrey" drawer>
-                <paper-toolbar class="blue"></paper-toolbar>
-				<paper-material class="bgcolor-blue" elevation="2">
+                <paper-toolbar class="red"></paper-toolbar>
+				<paper-material class="bgcolor-red" elevation="2">
 					<span class="bgcolor-darkgrey">
 						<div class="vertical end-justified layout">
-							<a class="wide" href="../index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="home"></iron-icon>Overview</paper-button></a>
-							<a class="wide" href="../articles/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="receipt"></iron-icon>Articles</paper-button></a>
-							<a class="wide" href="../gallery/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="view-quilt"></iron-icon>Gallery</paper-button></a>
+							<a class="wide" href="../index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="home"></iron-icon>Home</paper-button></a>
+							<a class="wide" href="../articles/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="receipt"></iron-icon>Documentation</paper-button></a>
 							<a class="wide" href="../contact/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="account-circle"></iron-icon>Contact</paper-button></a>
 						</div>
 					</span>
 				</paper-material>
             </paper-header-panel>
             <paper-header-panel main>
-                <paper-toolbar class="blue">
+                <paper-toolbar class="red">
                     <paper-icon-button id="navicon" icon="menu" paper-drawer-toggle></paper-icon-button>
-                    <span class="title">UAS Articles</span>
+                    <span class="title">Tetanus Documentation</span>
                     <a href="javascript:window.print()"><paper-icon-button icon="print"></paper-icon-button></a>
                     <a href="javascript:requestFullScreen(document.body)"><paper-icon-button icon="aspect-ratio"></paper-icon-button></a>
                     <section onclick="clickHandler(event)">
@@ -96,7 +94,7 @@
         				</paper-card>
         				<paper-card heading="Privacy" class="bgcolor-lightgrey" class="stretch">
         				  <div class="card-content">
-	        				<pre>  	There have been numerous stories about drones being shot down in communities. People who shoot down drones have been arrested. This is because it is illegal for a person to not olny fire a gun near residences but also because a passing airplane may be hit. The government takes this very seriously because there has been an incident where a drone crashed in the White House Lawn and another crashed during a U.S. Open. 
+	        				<pre>  	There have been numerous stories about drones being shot down in communities. People who shoot down drones have been arrested. This is because it is illegal for a person to not olny fire a gun near residences but also because a passing airplane may be hit. The government takes this very seriously because there has been an incident where a drone crashed in the White House Lawn and another crashed during a U.S. Open.
 	If most people in the community fly drones for fun, there would be traffic up in the air, a lot! Drones could crash into each other and conflict could occur between the owners of the drones. Also, the laws of trespassing a property is not clear. If the drone is right above the property, there has been disputes that doing this is trespassing the property. What makes this more interesting is that most drones are equipped with cameras including Go Pros. Other people could be filming what another person is doing inside his house. This is a serious privacy concern and it needs to be debated.
 	The Federal Aviation Administration stated that by 2030, there will be more than 30,000 private unmanned vehicles in the air. NASA and Amazon talked about having a class G, which is the area fellow 500 feet. This will make limits of drones more clear and won’t interrupt other airplane flights. More and more people are taking drones to the sky, which leads to more people wanting stricter regulations for drones.</pre>
         				  </div>
@@ -112,7 +110,7 @@
         				<paper-card heading="Security" class="bgcolor-lightgrey" class="stretch">
         				  <div class="card-content">
 	        				  <pre>	Security is a big part in American’s lives. Most people value their home security really high and spend thousands of dollars utilizing various equipment and technologies in their home to make it a safer place to live in. Now, there might be an upgrade in the near future. Here are two good examples.
-	InGenious Security Products is developing a product in which a drone will activate when an entry to the house is made. The drone will just be on the roof, waiting for activation. When the alert signal is activated, it will turn on its HD camera and record the incident. This could be happening within 3 years and the expected cost will be around $1,500! 
+	InGenious Security Products is developing a product in which a drone will activate when an entry to the house is made. The drone will just be on the roof, waiting for activation. When the alert signal is activated, it will turn on its HD camera and record the incident. This could be happening within 3 years and the expected cost will be around $1,500!
 	Another example is drones chasing thieves to track what they are doing. Secom is the first in the world to produce this type of drone to both capture images and sense the object. This could be a huge step forward in security because this will make the security of houses more secure. Also, this could be applied to traffic lights as well. If there is a crime, there is easy identification and the thief can be followed by the drone.
 </pre>
         				  </div>
@@ -160,10 +158,10 @@
         function requestFullScreen(element) {
             // Supports most browsers and their versions.
             var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
-    
+
             if (requestMethod) { // Native full screen.
                 requestMethod.call(element);
-            } 
+            }
             else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
                 var wscript = new ActiveXObject("WScript.Shell");
                 if (wscript !== null) {
