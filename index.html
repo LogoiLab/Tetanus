@@ -76,7 +76,7 @@
                     <a href="javascript:window.print()"><paper-icon-button icon="print"></paper-icon-button></a>
                     <a href="javascript:requestFullScreen(document.body)"><paper-icon-button icon="aspect-ratio"></paper-icon-button></a>
                     <section onclick="clickHandler(event)">
-                        <paper-fab id="right" icon="thumb-up" ink="" data-dialog="modal-like"></paper-fab>
+                        <paper-fab id="right" id="like-button" icon="thumb-up" ink="" data-dialog="modal-like"></paper-fab>
                     </section>
                 </paper-toolbar>
 				<div id="cards" flex>
@@ -84,7 +84,7 @@
 														<div flex>
 															<a href="index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="folder"></iron-icon>ZIP</paper-button></a>
 															<a href="index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="account-balance-wallet"></iron-icon>TAR</paper-button></a>
-															<a><paper-button class="wide bgcolor-lightgrey" data-dialog="modal-clone" raised><iron-icon icon="http"></iron-icon>CLONE</paper-button></a>
+															<a><paper-button class="wide bgcolor-lightgrey" data-dialog="modal-clone" id="modal-clone" raised><iron-icon icon="http"></iron-icon>CLONE</paper-button></a>
 														</div>
 													</paper-card>
                         	<paper-card class="bgcolor-lightgrey" heading="Updates" class="stretch">
@@ -123,22 +123,16 @@
             </div>
         </paper-dialog>
 	</body>
-    <script>
-        function clickHandler(e) {
-            var button = e.target;
-            while (!button.hasAttribute('data-dialog') && button !== document.body) {
-                button = button.parentElement;
-            }
-            if (!button.hasAttribute('data-dialog')) {
-                return;
-            }
-            var id = button.getAttribute('data-dialog');
-            var dialog = document.getElementById(id);
-            if (dialog) {
-                dialog.open();
-            }
-        }
-    </script>
+	<script>
+		document.querySelector("#like-button").addEventListener("click",
+			function(){
+					document.querySelector("#modal-like").open();
+			});
+			document.querySelector("#clone-button").addEventListener("click",
+					function(){
+							document.querySelector("#modal-clone").open();
+					});
+		</script>
     <script type="text/javascript">
         function requestFullScreen(element) {
             // Supports most browsers and their versions.
