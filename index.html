@@ -76,7 +76,7 @@
                     <a href="javascript:window.print()"><paper-icon-button icon="print"></paper-icon-button></a>
                     <a href="javascript:requestFullScreen(document.body)"><paper-icon-button icon="aspect-ratio"></paper-icon-button></a>
                     <section onclick="clickHandler(event)">
-                        <paper-fab id="right" icon="thumb-up" ink="" data-dialog="modal"></paper-fab>
+                        <paper-fab id="right" icon="thumb-up" ink="" data-dialog="modal-like"></paper-fab>
                     </section>
                 </paper-toolbar>
 				<div id="cards" flex>
@@ -84,19 +84,37 @@
 														<div flex>
 															<a href="index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="folder"></iron-icon>ZIP</paper-button></a>
 															<a href="index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="account-balance-wallet"></iron-icon>TAR</paper-button></a>
-															<a href="index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="http"></iron-icon>CLONE</paper-button></a>
+															<a href=""><paper-button class="wide bgcolor-lightgrey" data-dialog="modal-clone" raised><iron-icon icon="http"></iron-icon>CLONE</paper-button></a>
 														</div>
 													</paper-card>
-                        	<paper-card class="bgcolor-lightgrey" heading="Latest Article" class="stretch">
+                        	<paper-card class="bgcolor-lightgrey" heading="Updates" class="stretch">
                         		<pre class="justified">
-	Unmanned Aerial Systems (UAS) are commonly known around the public as “drones” and have a usual negative connotation. Most consumers do not realize that drones help create amazing film content for the Oscar winning movies. Skyfall, Game of Thrones, and the billion dollar franchise of Harry Potter have all used drones to capture iconic scenes and beautiful skylines. So what does this mean for the future of film?
-	Directors and producers are now seeing drones as needed equipment in the filming process. Drones enable a scene to be shot with the ability of seeing the entire action without moving from shot to shot. Drones provide more fluid movement from one area of a set to another; drones stop the constant cut and go between shots and utilize the entire set. In the future, drones will be utilized more and more in the filming industry.
+	just getting started! come back later!
 					</pre>
                         	</paper-card>
 				</div>
             </paper-header-panel>
         </paper-drawer-panel>
-        <paper-dialog id="modal" modal>
+        <paper-dialog id="modal-like" modal>
+            <div align="center">
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                    <a class="a2a_button_facebook"></a>
+                    <a class="a2a_button_twitter"></a>
+                    <a class="a2a_button_google_plus"></a>
+                    <a class="a2a_button_pinterest"></a>
+                    <a class="a2a_button_tumblr"></a>
+                    <a class="a2a_button_reddit"></a>
+                    <a class="a2a_button_email"></a>
+                    <a class="a2a_button_stumbleupon"></a>
+                </div>
+                <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+            </div>
+            <div class="buttons">
+                <paper-icon-button icon="close" raised dialog-confirm autofocus></paper-icon-button>
+            </div>
+        </paper-dialog>
+				<paper-dialog id="modal-clone" modal>
             <div align="center">
                 <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
                     <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
