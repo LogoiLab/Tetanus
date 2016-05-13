@@ -63,7 +63,7 @@
 					<span class="bgcolor-darkgrey">
 						<div class="vertical end-justified layout">
 							<a class="wide" href="index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="home"></iron-icon>Overview</paper-button></a>
-							<a class="wide" href="./documentation/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="receipt"></iron-icon>Articles</paper-button></a>
+							<a class="wide" href="./documentation/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="receipt"></iron-icon>Documentation</paper-button></a>
 							<paper-card class="bgcolor-lightgrey" heading="Downloads" class="stretch">
 								<div flex>
 									<a href="https://github.com/LogoiLab/Tetanus/archive/master.zip"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="folder"></iron-icon>ZIP</paper-button></a>
@@ -80,9 +80,7 @@
                     <span class="title">Tetanus</span>
                     <a href="javascript:window.print()"><paper-icon-button icon="print"></paper-icon-button></a>
                     <a href="javascript:requestFullScreen(document.body)"><paper-icon-button icon="aspect-ratio"></paper-icon-button></a>
-                    <section onclick="clickHandler(event)">
-                        <a href="http://www.github.com/LogoiLab/Tetanus/"><paper-fab id="right" icon="create" ink=""></paper-fab></a>
-                    </section>
+        						<a href="http://www.github.com/LogoiLab/Tetanus/"><paper-fab id="right" icon="create" ink=""></paper-fab></a>
                 </paper-toolbar>
 				<div id="cards" flex>
                         	<paper-card class="bgcolor-lightgrey" heading="Updates" class="stretch">
@@ -93,31 +91,7 @@
 				</div>
             </paper-header-panel>
         </paper-drawer-panel>
-				<paper-dialog id="modal" modal>
-            <div align="center" flex>
-                <paper-input></paper-input>
-            </div>
-            <div class="buttons">
-                <paper-icon-button icon="close" raised dialog-confirm autofocus></paper-icon-button>
-            </div>
-        </paper-dialog>
 	</body>
-    <script>
-        function clickHandler(e) {
-            var button = e.target;
-            while (!button.hasAttribute('data-dialog') && button !== document.body) {
-                button = button.parentElement;
-            }
-            if (!button.hasAttribute('data-dialog')) {
-                return;
-            }
-            var id = button.getAttribute('data-dialog');
-            var dialog = document.getElementById(id);
-            if (dialog) {
-                dialog.open();
-            }
-        }
-    </script>
     <script type="text/javascript">
         function requestFullScreen(element) {
             // Supports most browsers and their versions.
