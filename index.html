@@ -3,11 +3,11 @@
 	<head>
 	  	<meta charset="utf-8">
 	  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	  	
-	  	<title>UAS Overview</title>
-	  	
-	  	<meta name="description" content="">
-		<meta name="author" content="Tuscarora TSA">
+
+	  	<title>Tetanus</title>
+
+	  	<meta name="description" content="A post-exploitation framework written in Rust.">
+		<meta name="author" content="LogoiLab">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
 	    <!--Favicons-->
 	  	<link rel="shortcut icon" href="favicon.ico">
@@ -45,7 +45,6 @@
 	  	<link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
 	  	<!--Scripts-->
 	  	<script src="./analytics.js"></script>
-	  	<script src="./search.js"></script>
 	  	<script type="text/javascript">
             document.addEventListener('polymer-ready', function() {
                 var navicon = document.getElementById('navicon');
@@ -64,10 +63,8 @@
 					<span class="bgcolor-darkgrey">
 						<div class="vertical end-justified layout">
 							<a class="wide" href="index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="home"></iron-icon>Overview</paper-button></a>
-							<a class="wide" href="./articles/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="receipt"></iron-icon>Articles</paper-button></a>
-							<a class="wide" href="./gallery/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="view-quilt"></iron-icon>Gallery</paper-button></a>
+							<a class="wide" href="./documentation/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="receipt"></iron-icon>Articles</paper-button></a>
 							<a class="wide" href="./contact/index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="account-circle"></iron-icon>Contact</paper-button></a>
-							<a class="wide" href="http://lcps.org/Domain/5254"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="class"></iron-icon>THS Website</paper-button></a>
 						</div>
 					</span>
 				</paper-material>
@@ -83,12 +80,9 @@
                     </section>
                 </paper-toolbar>
 				<div id="cards" flex>
-				<paper-card class="bgcolor-lightgrey" class="stretch">
-                        		<gcse:search></gcse:search>
-                        	</paper-card>
-                        	<paper-card class="bgcolor-lightgrey" heading="Welcome" class="stretch">
-                        		<p class="justified">To Tuscarora High School TSA's UAS overview.</p>
-                        	</paper-card>
+                        	<paper-card class="bgcolor-lightgrey" heading="Downloads" class="stretch">
+                        		<a class="wide" href="index.html"><paper-button class="wide bgcolor-lightgrey" raised><iron-icon icon="cloud"></iron-icon>Overview</paper-button></a>
+													</paper-card>
                         	<paper-card class="bgcolor-lightgrey" heading="Latest Article" class="stretch">
                         		<pre class="justified">
 	Unmanned Aerial Systems (UAS) are commonly known around the public as “drones” and have a usual negative connotation. Most consumers do not realize that drones help create amazing film content for the Oscar winning movies. Skyfall, Game of Thrones, and the billion dollar franchise of Harry Potter have all used drones to capture iconic scenes and beautiful skylines. So what does this mean for the future of film?
@@ -138,10 +132,10 @@
         function requestFullScreen(element) {
             // Supports most browsers and their versions.
             var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
-    
+
             if (requestMethod) { // Native full screen.
                 requestMethod.call(element);
-            } 
+            }
             else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
                 var wscript = new ActiveXObject("WScript.Shell");
                 if (wscript !== null) {
