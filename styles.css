@@ -45,7 +45,7 @@ text-justify: inter-word;
 padding: 5px;
 }
 a{
-color: #4A444B !important;
+color: #B7410E !important;
 }
 body{
 font-family: 'Comfortaa' !important;
@@ -68,7 +68,7 @@ html /deep/ paper-fab[icon="thumb-up"] {
 background: var(--paper-grey500);
 }
 paper-fab {
-background-color: #4A444B !important;
+background-color: #E7ECE6 !important;
 color: #B7410E !important;
 position: absolute;
 float: left;
