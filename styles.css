@@ -69,6 +69,7 @@ background: var(--paper-grey500);
 }
 paper-fab {
 background-color: #4A444B !important;
+color: #B7410E !important;
 position: absolute;
 float: left;
 top: 2.5em;
