@@ -1,5 +1,5 @@
 {
-  "name": "TSA Site",
+  "name": "Tetanus-Pages",
   "private": true,
   "dependencies": {
     "parallax-container": "winhowes/parallax-container#~1.0.0",
